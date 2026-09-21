@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>gdrivesync</title>
+  <meta name="description" content="gdrivesync: a personal OAuth client that lets rclone sync its owner's Google Drive files.">
+  <style>
+    :root {
+      --paper: #F6F7F8;
+      --ink: #1C2530;
+      --muted: #5B6673;
+      --rule: #D5DAE0;
+      --link: #1F5FA8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #161B21;
+        --ink: #E4E8EC;
+        --muted: #9AA5B1;
+        --rule: #2C343D;
+        --link: #7FB0EC;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Charter, "Bitstream Charter", "Iowan Old Style", "Sitka Text", Cambria, Georgia, serif;
+      font-size: 1.125rem;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 38rem;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
+    }
+    h1 { font-size: 2.25rem; line-height: 1.2; margin: 0 0 0.5rem; font-weight: 700; }
+    h2 { font-size: 1.25rem; margin: 2.5rem 0 0.5rem; font-weight: 700; }
+    .lede { color: var(--muted); font-size: 1.25rem; margin: 0 0 2rem; }
+    ul { padding-left: 1.25rem; }
+    li { margin-bottom: 0.35rem; }
+    a { color: var(--link); text-underline-offset: 0.15em; }
+    a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>gdrivesync</h1>
+    <p class="lede">A personal tool for syncing files between my computer and my Google Drive.</p>
+
+    <h2>What it does</h2>
+    <p>gdrivesync is a private Google OAuth client used by its owner with <a href="https://rclone.org">rclone</a>, an open-source file sync program running on the owner's own computer. It lets rclone sign in to the owner's Google account to upload, download, and sync files with Google Drive.</p>
+
+    <h2>Google data it uses</h2>
+    <p>The app requests access to:</p>
+    <ul>
+      <li>Google Drive: view, create, edit, and delete files, to keep local folders and Drive in sync</li>
+    </ul>
+    <p>Files are transferred only between the owner's computer and their own Google Drive. No data is sent to any other server, sold, shared with third parties, or used for advertising.</p>
+
+    <h2>Who can use it</h2>
+    <p>The app is intended for use by its owner only and is not offered as a public service.</p>
+
+    <footer>
+      <p><a href="privacy.html">Privacy policy</a></p>
+    </footer>
+  </main>
+</body>
+</html>
